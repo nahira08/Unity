@@ -1,1 +1,7 @@
-file:///C:/Users/LENOVO%20YOGA/Downloads/MODUL%200%20-%20Resource%20Game%20Build.pdf
+https://github.com/username/contoh-pdf-repo.git
+git clone https://github.com/username/contoh-pdf-repo.git
+cd contoh-pdf-repo
+git add contoh-file.pdf
+git commit -m "Menambahkan file PDF contoh-file.pdf"
+git push origin main
+
