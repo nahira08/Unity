@@ -1,7 +1,14 @@
-https://github.com/username/contoh-pdf-repo.git
-git clone https://github.com/username/contoh-pdf-repo.git
-cd contoh-pdf-repo
-git add contoh-file.pdf
-git commit -m "Menambahkan file PDF contoh-file.pdf"
-git push origin main
+using UnityEngine;
 
+public class MoveObject : MonoBehaviour
+{
+    public float speed = 5f;
+
+    void Update()
+    {
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3(horizontal, 0, vertical) * speed * Time.deltaTime;
+        transform.Translate(movement);
+    }
+}
